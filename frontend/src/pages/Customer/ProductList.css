@@ -1,0 +1,105 @@
+.plp {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* Header */
+.plp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.plp-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.plp-header p {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.plp-header select {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  padding: 0.4rem 0.8rem;
+}
+
+/* Layout */
+.plp-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+}
+
+/* Filters */
+.plp-filters {
+  background: #f9fafb;
+  border-radius: 0.9rem;
+  padding: 1rem;
+}
+
+.plp-filters h3 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.plp-filter-item {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+/* Products */
+.plp-products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.plp-card {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  text-align: center;
+}
+
+.plp-img {
+  font-size: 3rem;
+}
+
+.plp-price {
+  font-weight: 700;
+  margin: 0.4rem 0;
+}
+
+.plp-btn {
+  border-radius: 999px;
+  border: none;
+  background: #22c55e;
+  color: #022c22;
+  font-weight: 600;
+  padding: 0.45rem 1.1rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .plp-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .plp-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .plp-products {
+    grid-template-columns: 1fr;
+  }
+}

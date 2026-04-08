@@ -1,0 +1,16 @@
+.seller-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top, #020617, #020617 45%, #020617);
+  /* You can tweak later to something like:
+     background: radial-gradient(circle at top, #020617, #020617 40%, #020617);
+  */
+}
+
+.seller-layout-main {
+  flex: 1;
+  padding: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}

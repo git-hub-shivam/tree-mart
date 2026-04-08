@@ -1,0 +1,312 @@
+:root {
+  --seller-bg: #020617;
+  --seller-bg-soft: #0b1120;
+  --seller-accent: #4f46e5;        /* indigo accent */
+  --seller-accent-soft: #c7d2fe;
+  --seller-text: #f9fafb;
+  --seller-muted: #9ca3af;
+  --seller-border: #1f2937;
+}
+
+.seller-nav {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: linear-gradient(90deg, #020617, #111827, #1d4ed8);
+  color: var(--seller-text);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+.seller-nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.7rem 1.5rem;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Left: logo */
+
+.seller-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.seller-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.15rem;
+  text-decoration: none;
+}
+
+.seller-logo-main {
+  font-weight: 800;
+  font-size: 1.25rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #020617;
+  color: #e5e7eb;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+.seller-logo-accent {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--seller-accent);
+  letter-spacing: 0.05em;
+}
+
+.seller-logo-sub {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--seller-muted);
+}
+
+/* Middle: search */
+
+.seller-nav-search {
+  max-width: 460px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.seller-nav-search input {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--seller-text);
+  font-size: 0.85rem;
+  padding: 0.45rem 0.9rem;
+  outline: none;
+}
+
+.seller-nav-search input::placeholder {
+  color: #64748b;
+}
+
+/* Right: actions */
+
+.seller-nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+}
+
+.seller-nav-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--seller-accent);
+  color: #eef2ff;
+  box-shadow: 0 8px 22px rgba(79, 70, 229, 0.55);
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+}
+
+.seller-nav-btn:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(79, 70, 229, 0.7);
+}
+
+/* Icon button */
+
+.seller-icon-btn {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.1s, background 0.15s;
+}
+
+.seller-icon-btn:hover {
+  border-color: var(--seller-accent);
+  background: rgba(15, 23, 42, 1);
+  transform: translateY(-1px);
+}
+
+.seller-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #f97316;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+}
+
+/* Profile */
+
+.seller-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.seller-profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 20%, #bfdbfe, #1d4ed8);
+  color: #020617;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.seller-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.seller-profile-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.seller-profile-role {
+  font-size: 0.7rem;
+  color: #cbd5f5;
+}
+
+/* Mobile toggle */
+
+.seller-nav-mobile-toggle {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(15, 23, 42, 0.9);
+  cursor: pointer;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.seller-nav-mobile-toggle span {
+  display: block;
+  width: 14px;
+  height: 2px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  margin-inline: auto;
+}
+
+/* Bottom nav */
+
+.seller-nav-links {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.4rem 1.5rem 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.8);
+  background: rgba(15, 23, 42, 0.95);
+  font-size: 0.84rem;
+}
+
+.seller-nav-link {
+  text-decoration: none;
+  color: var(--seller-muted);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+}
+
+.seller-nav-link:hover {
+  background: rgba(37, 99, 235, 0.3);
+  color: #e5e7eb;
+  transform: translateY(-1px);
+}
+
+.seller-nav-link-highlight {
+  background: rgba(79, 70, 229, 0.18);
+  color: var(--seller-accent-soft);
+  border: 1px solid rgba(79, 70, 229, 0.6);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .seller-nav-inner {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .seller-nav-search {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .seller-nav-hide-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .seller-nav-inner {
+    padding: 0.7rem 1rem;
+  }
+
+  .seller-nav-search {
+    display: none;
+  }
+
+  .seller-nav-mobile-toggle {
+    display: inline-flex;
+  }
+
+  .seller-nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.6rem 1rem 0.9rem;
+  }
+
+  .seller-nav-links-open {
+    display: flex;
+  }
+
+  .seller-nav-link {
+    width: 100%;
+  }
+/* Active nav link */
+.seller-nav-link-active {
+  background: rgba(79, 70, 229, 0.4);
+  color: #e5e7eb !important;
+  border: 1px solid rgba(129, 140, 248, 0.8);
+}
+
+
+}

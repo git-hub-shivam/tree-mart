@@ -1,0 +1,150 @@
+.home {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* HERO */
+.home-hero {
+  background: linear-gradient(120deg, #064e3b, #022c22);
+  color: white;
+  padding: 3rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.home-hero-content {
+  max-width: 700px;
+}
+
+.home-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.home-hero p {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* BUTTONS */
+.home-btn-primary {
+  margin-top: 1rem;
+  border-radius: 999px;
+  border: none;
+  background: #22c55e;
+  color: #022c22;
+  font-weight: 700;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+}
+
+.home-btn-secondary {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.home-section {
+  margin-top: 2.2rem;
+}
+
+.home-section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* CATEGORIES */
+.home-categories {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.home-category-card {
+  background: #f0fdf4;
+  border-radius: 0.9rem;
+  padding: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* PRODUCTS */
+.home-products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-product-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.home-product-img {
+  font-size: 3rem;
+}
+
+.home-price {
+  font-weight: 700;
+  margin: 0.4rem 0;
+}
+
+/* OFFER */
+.home-offer {
+  margin-top: 3rem;
+  background: #ecfeff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* FEATURES */
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-feature {
+  background: #f9fafb;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .home-categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .home-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .home-categories,
+  .home-products,
+  .home-features {
+    grid-template-columns: 1fr;
+  }
+}
+  

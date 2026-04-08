@@ -1,0 +1,105 @@
+.checkout {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+.checkout h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Layout */
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Cards */
+.checkout-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 1rem;
+}
+
+.checkout-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Form */
+.checkout-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.checkout-form input {
+  border-radius: 0.6rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* Radio */
+.checkout-radio {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* Summary */
+.checkout-summary {
+  background: #f9fafb;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  height: fit-content;
+}
+
+.checkout-summary h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.checkout-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-top: 0.6rem;
+}
+
+/* Button */
+.checkout-btn {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 999px;
+  border: none;
+  background: #22c55e;
+  color: #022c22;
+  font-weight: 700;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-form {
+    grid-template-columns: 1fr;
+  }
+}
